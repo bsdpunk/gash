@@ -54,7 +54,15 @@ func runsh(command string, args []string) (s string, err error) {
 	case "rac":
 		fmt.Println("rackspace")
 	case "hel":
-		fmt.Println("This Menu")
+		//s := fmt.Sprintf("a %s", "string")
+		//    fmt.Println(s)
+		s := `All commands begin with a three letter prefix:
+		esx - For vmware
+		lin - For lindoe
+		rac - for Rackspace
+		qui or exi - for quit
+		hel - for help`
+		fmt.Println(s)
 	case "exi":
 		os.Exit(0)
 	case "qui":
