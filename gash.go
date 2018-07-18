@@ -7,6 +7,7 @@ import (
 	"github.com/vmware/govmomi/view"
 	"github.com/vmware/govmomi/vim25/mo"
 	"log"
+	"os"
 )
 
 func runsh(command string, args []string) (s string, err error) {
@@ -52,6 +53,12 @@ func runsh(command string, args []string) (s string, err error) {
 		fmt.Println("linode")
 	case "rac":
 		fmt.Println("rackspace")
+	case "hel":
+		fmt.Println("This Menu")
+	case "exi":
+		os.Exit(0)
+	case "qui":
+		os.Exit(0)
 	default:
 		fmt.Println("no")
 	}
