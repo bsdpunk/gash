@@ -58,7 +58,7 @@ func runsh(command string, args []string) (s string, err error) {
 		//    fmt.Println(s)
 		s := `All commands begin with a three letter prefix:
 		esx - For vmware
-		lin - For lindoe
+		lin - For linode
 		rac - for Rackspace
 		qui or exi - for quit
 		hel - for help`
